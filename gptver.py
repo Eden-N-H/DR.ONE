@@ -4,7 +4,7 @@ from queue import PriorityQueue
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
-pygame.display.set_caption("A* Path Finding")
+pygame.display.set_caption("A* Path Finding (2.0)")
 
 pygame.font.init()
 
