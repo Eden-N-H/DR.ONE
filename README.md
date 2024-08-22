@@ -1,5 +1,5 @@
 # DR.ONE
-NOTE: In order to run 'gptver' or 'astar' you will 
+NOTE: In order to run any of the files you will 
 need to install the 'pygame' library to your local 
 development environment (used to render the GUI).
 

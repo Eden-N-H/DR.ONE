@@ -240,7 +240,6 @@ def get_clicked_pos(pos, rows, width):
 def main(win, width):
     ROWS = 10
     grid = make_grid(ROWS, width)
-
     start = None
     end = None
     global selected_type
