@@ -1,4 +1,5 @@
 import pygame
+import time
 import math
 from queue import PriorityQueue
 
@@ -238,7 +239,7 @@ def get_clicked_pos(pos, rows, width):
     return row, col
 
 def main(win, width):
-    ROWS = 10
+    ROWS = 20
     grid = make_grid(ROWS, width)
     start = None
     end = None
@@ -311,10 +312,13 @@ def main(win, width):
 
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE and start and end:
+                    startTime = time.time()
                     for row in grid:
                         for spot in row:
                             spot.update_neighbors(grid)
                     algorithm(lambda: draw(win, grid, ROWS, width), grid, start, end)
+                    endTime = time.time()
+                    print("Processing time: " + str(endTime - startTime) + "s")
 
                 if event.key == pygame.K_c:
                     start = None
