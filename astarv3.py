@@ -127,6 +127,7 @@ def h(p1, p2):
 
 def reconstruct_path(came_from, current, draw):
     while current in came_from:
+        #####print(current) Add a way of printing/retrieving the pos for each grid that makes up the reconstructed path.
         current = came_from[current]
         if not current.is_start():  # Ensure start block isn't modified
             current.make_path()
