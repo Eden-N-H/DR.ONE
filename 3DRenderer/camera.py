@@ -1,4 +1,3 @@
-
 import pygame as pg
 from matrix_functions import *
 
@@ -13,12 +12,15 @@ class Camera:
         self.v_fov = self.h_fov * (render.HEIGHT / render.WIDTH)
         self.near_plane = 0.1
         self.far_plane = 100
-        self.moving_speed = 0.3
+        self.moving_speed = 0.1
         self.rotation_speed = 0.015
 
         self.anglePitch = 0
         self.angleYaw = 0
         self.angleRoll = 0
+
+        self.mouse_sensitivity = 0.001
+        self.last_mouse_pos = None
 
     def control(self):
         key = pg.key.get_pressed()
@@ -43,6 +45,24 @@ class Camera:
             self.camera_pitch(-self.rotation_speed)
         if key[pg.K_DOWN]:
             self.camera_pitch(self.rotation_speed)
+
+        self.mouse_control()
+
+    def mouse_control(self):
+        mouse_buttons = pg.mouse.get_pressed()
+        if mouse_buttons[0]:  # Left mouse button is pressed
+            mouse_pos = pg.mouse.get_pos()
+
+            if self.last_mouse_pos is not None:
+                dx = mouse_pos[0] - self.last_mouse_pos[0]
+                dy = mouse_pos[1] - self.last_mouse_pos[1]
+
+                self.camera_yaw(-dx * self.mouse_sensitivity)
+                self.camera_pitch(-dy * self.mouse_sensitivity)  # Inverted y-axis for natural feel
+
+            self.last_mouse_pos = mouse_pos
+        else:
+            self.last_mouse_pos = None
 
     def camera_yaw(self, angle):
         self.angleYaw += angle

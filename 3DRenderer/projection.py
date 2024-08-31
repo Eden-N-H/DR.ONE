@@ -1,7 +1,5 @@
 import math
 import numpy as np
-
-
 class Projection:
     def __init__(self, render):
         NEAR = render.camera.near_plane

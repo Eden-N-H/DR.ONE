@@ -1,6 +1,7 @@
 import math
 import numpy as np
 
+# contains a series of functions used to manipulate vertices (translate, rotate or scale)
 
 def translate(pos):
     tx, ty, tz = pos

@@ -1,0 +1,1718 @@
+# 3D Grid
+mtllib cube.mtl
+v 0.0 0.0 0.0
+v 0.0 0.0 2.0
+v 0.0 0.0 4.0
+v 0.0 0.0 6.0
+v 0.0 0.0 8.0
+v 0.0 0.0 10.0
+v 0.0 2.0 0.0
+v 0.0 2.0 2.0
+v 0.0 2.0 4.0
+v 0.0 2.0 6.0
+v 0.0 2.0 8.0
+v 0.0 2.0 10.0
+v 0.0 4.0 0.0
+v 0.0 4.0 2.0
+v 0.0 4.0 4.0
+v 0.0 4.0 6.0
+v 0.0 4.0 8.0
+v 0.0 4.0 10.0
+v 0.0 6.0 0.0
+v 0.0 6.0 2.0
+v 0.0 6.0 4.0
+v 0.0 6.0 6.0
+v 0.0 6.0 8.0
+v 0.0 6.0 10.0
+v 0.0 8.0 0.0
+v 0.0 8.0 2.0
+v 0.0 8.0 4.0
+v 0.0 8.0 6.0
+v 0.0 8.0 8.0
+v 0.0 8.0 10.0
+v 0.0 10.0 0.0
+v 0.0 10.0 2.0
+v 0.0 10.0 4.0
+v 0.0 10.0 6.0
+v 0.0 10.0 8.0
+v 0.0 10.0 10.0
+v 2.0 0.0 0.0
+v 2.0 0.0 2.0
+v 2.0 0.0 4.0
+v 2.0 0.0 6.0
+v 2.0 0.0 8.0
+v 2.0 0.0 10.0
+v 2.0 2.0 0.0
+v 2.0 2.0 2.0
+v 2.0 2.0 4.0
+v 2.0 2.0 6.0
+v 2.0 2.0 8.0
+v 2.0 2.0 10.0
+v 2.0 4.0 0.0
+v 2.0 4.0 2.0
+v 2.0 4.0 4.0
+v 2.0 4.0 6.0
+v 2.0 4.0 8.0
+v 2.0 4.0 10.0
+v 2.0 6.0 0.0
+v 2.0 6.0 2.0
+v 2.0 6.0 4.0
+v 2.0 6.0 6.0
+v 2.0 6.0 8.0
+v 2.0 6.0 10.0
+v 2.0 8.0 0.0
+v 2.0 8.0 2.0
+v 2.0 8.0 4.0
+v 2.0 8.0 6.0
+v 2.0 8.0 8.0
+v 2.0 8.0 10.0
+v 2.0 10.0 0.0
+v 2.0 10.0 2.0
+v 2.0 10.0 4.0
+v 2.0 10.0 6.0
+v 2.0 10.0 8.0
+v 2.0 10.0 10.0
+v 4.0 0.0 0.0
+v 4.0 0.0 2.0
+v 4.0 0.0 4.0
+v 4.0 0.0 6.0
+v 4.0 0.0 8.0
+v 4.0 0.0 10.0
+v 4.0 2.0 0.0
+v 4.0 2.0 2.0
+v 4.0 2.0 4.0
+v 4.0 2.0 6.0
+v 4.0 2.0 8.0
+v 4.0 2.0 10.0
+v 4.0 4.0 0.0
+v 4.0 4.0 2.0
+v 4.0 4.0 4.0
+v 4.0 4.0 6.0
+v 4.0 4.0 8.0
+v 4.0 4.0 10.0
+v 4.0 6.0 0.0
+v 4.0 6.0 2.0
+v 4.0 6.0 4.0
+v 4.0 6.0 6.0
+v 4.0 6.0 8.0
+v 4.0 6.0 10.0
+v 4.0 8.0 0.0
+v 4.0 8.0 2.0
+v 4.0 8.0 4.0
+v 4.0 8.0 6.0
+v 4.0 8.0 8.0
+v 4.0 8.0 10.0
+v 4.0 10.0 0.0
+v 4.0 10.0 2.0
+v 4.0 10.0 4.0
+v 4.0 10.0 6.0
+v 4.0 10.0 8.0
+v 4.0 10.0 10.0
+v 6.0 0.0 0.0
+v 6.0 0.0 2.0
+v 6.0 0.0 4.0
+v 6.0 0.0 6.0
+v 6.0 0.0 8.0
+v 6.0 0.0 10.0
+v 6.0 2.0 0.0
+v 6.0 2.0 2.0
+v 6.0 2.0 4.0
+v 6.0 2.0 6.0
+v 6.0 2.0 8.0
+v 6.0 2.0 10.0
+v 6.0 4.0 0.0
+v 6.0 4.0 2.0
+v 6.0 4.0 4.0
+v 6.0 4.0 6.0
+v 6.0 4.0 8.0
+v 6.0 4.0 10.0
+v 6.0 6.0 0.0
+v 6.0 6.0 2.0
+v 6.0 6.0 4.0
+v 6.0 6.0 6.0
+v 6.0 6.0 8.0
+v 6.0 6.0 10.0
+v 6.0 8.0 0.0
+v 6.0 8.0 2.0
+v 6.0 8.0 4.0
+v 6.0 8.0 6.0
+v 6.0 8.0 8.0
+v 6.0 8.0 10.0
+v 6.0 10.0 0.0
+v 6.0 10.0 2.0
+v 6.0 10.0 4.0
+v 6.0 10.0 6.0
+v 6.0 10.0 8.0
+v 6.0 10.0 10.0
+v 8.0 0.0 0.0
+v 8.0 0.0 2.0
+v 8.0 0.0 4.0
+v 8.0 0.0 6.0
+v 8.0 0.0 8.0
+v 8.0 0.0 10.0
+v 8.0 2.0 0.0
+v 8.0 2.0 2.0
+v 8.0 2.0 4.0
+v 8.0 2.0 6.0
+v 8.0 2.0 8.0
+v 8.0 2.0 10.0
+v 8.0 4.0 0.0
+v 8.0 4.0 2.0
+v 8.0 4.0 4.0
+v 8.0 4.0 6.0
+v 8.0 4.0 8.0
+v 8.0 4.0 10.0
+v 8.0 6.0 0.0
+v 8.0 6.0 2.0
+v 8.0 6.0 4.0
+v 8.0 6.0 6.0
+v 8.0 6.0 8.0
+v 8.0 6.0 10.0
+v 8.0 8.0 0.0
+v 8.0 8.0 2.0
+v 8.0 8.0 4.0
+v 8.0 8.0 6.0
+v 8.0 8.0 8.0
+v 8.0 8.0 10.0
+v 8.0 10.0 0.0
+v 8.0 10.0 2.0
+v 8.0 10.0 4.0
+v 8.0 10.0 6.0
+v 8.0 10.0 8.0
+v 8.0 10.0 10.0
+v 10.0 0.0 0.0
+v 10.0 0.0 2.0
+v 10.0 0.0 4.0
+v 10.0 0.0 6.0
+v 10.0 0.0 8.0
+v 10.0 0.0 10.0
+v 10.0 2.0 0.0
+v 10.0 2.0 2.0
+v 10.0 2.0 4.0
+v 10.0 2.0 6.0
+v 10.0 2.0 8.0
+v 10.0 2.0 10.0
+v 10.0 4.0 0.0
+v 10.0 4.0 2.0
+v 10.0 4.0 4.0
+v 10.0 4.0 6.0
+v 10.0 4.0 8.0
+v 10.0 4.0 10.0
+v 10.0 6.0 0.0
+v 10.0 6.0 2.0
+v 10.0 6.0 4.0
+v 10.0 6.0 6.0
+v 10.0 6.0 8.0
+v 10.0 6.0 10.0
+v 10.0 8.0 0.0
+v 10.0 8.0 2.0
+v 10.0 8.0 4.0
+v 10.0 8.0 6.0
+v 10.0 8.0 8.0
+v 10.0 8.0 10.0
+v 10.0 10.0 0.0
+v 10.0 10.0 2.0
+v 10.0 10.0 4.0
+v 10.0 10.0 6.0
+v 10.0 10.0 8.0
+v 10.0 10.0 10.0
+usemtl red
+f 1 37 43 7
+usemtl red
+f 2 38 44 8
+usemtl red
+f 1 37 38 2
+usemtl red
+f 37 43 44 38
+usemtl red
+f 43 7 8 44
+usemtl red
+f 7 1 2 8
+usemtl default
+f 2 38 44 8
+usemtl default
+f 3 39 45 9
+usemtl default
+f 2 38 39 3
+usemtl default
+f 38 44 45 39
+usemtl default
+f 44 8 9 45
+usemtl default
+f 8 2 3 9
+usemtl default
+f 3 39 45 9
+usemtl default
+f 4 40 46 10
+usemtl default
+f 3 39 40 4
+usemtl default
+f 39 45 46 40
+usemtl default
+f 45 9 10 46
+usemtl default
+f 9 3 4 10
+usemtl default
+f 4 40 46 10
+usemtl default
+f 5 41 47 11
+usemtl default
+f 4 40 41 5
+usemtl default
+f 40 46 47 41
+usemtl default
+f 46 10 11 47
+usemtl default
+f 10 4 5 11
+usemtl default
+f 5 41 47 11
+usemtl default
+f 6 42 48 12
+usemtl default
+f 5 41 42 6
+usemtl default
+f 41 47 48 42
+usemtl default
+f 47 11 12 48
+usemtl default
+f 11 5 6 12
+usemtl default
+f 7 43 49 13
+usemtl default
+f 8 44 50 14
+usemtl default
+f 7 43 44 8
+usemtl default
+f 43 49 50 44
+usemtl default
+f 49 13 14 50
+usemtl default
+f 13 7 8 14
+usemtl default
+f 8 44 50 14
+usemtl default
+f 9 45 51 15
+usemtl default
+f 8 44 45 9
+usemtl default
+f 44 50 51 45
+usemtl default
+f 50 14 15 51
+usemtl default
+f 14 8 9 15
+usemtl default
+f 9 45 51 15
+usemtl default
+f 10 46 52 16
+usemtl default
+f 9 45 46 10
+usemtl default
+f 45 51 52 46
+usemtl default
+f 51 15 16 52
+usemtl default
+f 15 9 10 16
+usemtl default
+f 10 46 52 16
+usemtl default
+f 11 47 53 17
+usemtl default
+f 10 46 47 11
+usemtl default
+f 46 52 53 47
+usemtl default
+f 52 16 17 53
+usemtl default
+f 16 10 11 17
+usemtl default
+f 11 47 53 17
+usemtl default
+f 12 48 54 18
+usemtl default
+f 11 47 48 12
+usemtl default
+f 47 53 54 48
+usemtl default
+f 53 17 18 54
+usemtl default
+f 17 11 12 18
+usemtl default
+f 13 49 55 19
+usemtl default
+f 14 50 56 20
+usemtl default
+f 13 49 50 14
+usemtl default
+f 49 55 56 50
+usemtl default
+f 55 19 20 56
+usemtl default
+f 19 13 14 20
+usemtl default
+f 14 50 56 20
+usemtl default
+f 15 51 57 21
+usemtl default
+f 14 50 51 15
+usemtl default
+f 50 56 57 51
+usemtl default
+f 56 20 21 57
+usemtl default
+f 20 14 15 21
+usemtl default
+f 15 51 57 21
+usemtl default
+f 16 52 58 22
+usemtl default
+f 15 51 52 16
+usemtl default
+f 51 57 58 52
+usemtl default
+f 57 21 22 58
+usemtl default
+f 21 15 16 22
+usemtl default
+f 16 52 58 22
+usemtl default
+f 17 53 59 23
+usemtl default
+f 16 52 53 17
+usemtl default
+f 52 58 59 53
+usemtl default
+f 58 22 23 59
+usemtl default
+f 22 16 17 23
+usemtl default
+f 17 53 59 23
+usemtl default
+f 18 54 60 24
+usemtl default
+f 17 53 54 18
+usemtl default
+f 53 59 60 54
+usemtl default
+f 59 23 24 60
+usemtl default
+f 23 17 18 24
+usemtl default
+f 19 55 61 25
+usemtl default
+f 20 56 62 26
+usemtl default
+f 19 55 56 20
+usemtl default
+f 55 61 62 56
+usemtl default
+f 61 25 26 62
+usemtl default
+f 25 19 20 26
+usemtl default
+f 20 56 62 26
+usemtl default
+f 21 57 63 27
+usemtl default
+f 20 56 57 21
+usemtl default
+f 56 62 63 57
+usemtl default
+f 62 26 27 63
+usemtl default
+f 26 20 21 27
+usemtl default
+f 21 57 63 27
+usemtl default
+f 22 58 64 28
+usemtl default
+f 21 57 58 22
+usemtl default
+f 57 63 64 58
+usemtl default
+f 63 27 28 64
+usemtl default
+f 27 21 22 28
+usemtl default
+f 22 58 64 28
+usemtl default
+f 23 59 65 29
+usemtl default
+f 22 58 59 23
+usemtl default
+f 58 64 65 59
+usemtl default
+f 64 28 29 65
+usemtl default
+f 28 22 23 29
+usemtl default
+f 23 59 65 29
+usemtl default
+f 24 60 66 30
+usemtl default
+f 23 59 60 24
+usemtl default
+f 59 65 66 60
+usemtl default
+f 65 29 30 66
+usemtl default
+f 29 23 24 30
+usemtl default
+f 25 61 67 31
+usemtl default
+f 26 62 68 32
+usemtl default
+f 25 61 62 26
+usemtl default
+f 61 67 68 62
+usemtl default
+f 67 31 32 68
+usemtl default
+f 31 25 26 32
+usemtl default
+f 26 62 68 32
+usemtl default
+f 27 63 69 33
+usemtl default
+f 26 62 63 27
+usemtl default
+f 62 68 69 63
+usemtl default
+f 68 32 33 69
+usemtl default
+f 32 26 27 33
+usemtl default
+f 27 63 69 33
+usemtl default
+f 28 64 70 34
+usemtl default
+f 27 63 64 28
+usemtl default
+f 63 69 70 64
+usemtl default
+f 69 33 34 70
+usemtl default
+f 33 27 28 34
+usemtl default
+f 28 64 70 34
+usemtl default
+f 29 65 71 35
+usemtl default
+f 28 64 65 29
+usemtl default
+f 64 70 71 65
+usemtl default
+f 70 34 35 71
+usemtl default
+f 34 28 29 35
+usemtl default
+f 29 65 71 35
+usemtl default
+f 30 66 72 36
+usemtl default
+f 29 65 66 30
+usemtl default
+f 65 71 72 66
+usemtl default
+f 71 35 36 72
+usemtl default
+f 35 29 30 36
+usemtl default
+f 37 73 79 43
+usemtl default
+f 38 74 80 44
+usemtl default
+f 37 73 74 38
+usemtl default
+f 73 79 80 74
+usemtl default
+f 79 43 44 80
+usemtl default
+f 43 37 38 44
+usemtl default
+f 38 74 80 44
+usemtl default
+f 39 75 81 45
+usemtl default
+f 38 74 75 39
+usemtl default
+f 74 80 81 75
+usemtl default
+f 80 44 45 81
+usemtl default
+f 44 38 39 45
+usemtl default
+f 39 75 81 45
+usemtl default
+f 40 76 82 46
+usemtl default
+f 39 75 76 40
+usemtl default
+f 75 81 82 76
+usemtl default
+f 81 45 46 82
+usemtl default
+f 45 39 40 46
+usemtl default
+f 40 76 82 46
+usemtl default
+f 41 77 83 47
+usemtl default
+f 40 76 77 41
+usemtl default
+f 76 82 83 77
+usemtl default
+f 82 46 47 83
+usemtl default
+f 46 40 41 47
+usemtl default
+f 41 77 83 47
+usemtl default
+f 42 78 84 48
+usemtl default
+f 41 77 78 42
+usemtl default
+f 77 83 84 78
+usemtl default
+f 83 47 48 84
+usemtl default
+f 47 41 42 48
+usemtl default
+f 43 79 85 49
+usemtl default
+f 44 80 86 50
+usemtl default
+f 43 79 80 44
+usemtl default
+f 79 85 86 80
+usemtl default
+f 85 49 50 86
+usemtl default
+f 49 43 44 50
+usemtl blue
+f 44 80 86 50
+usemtl blue
+f 45 81 87 51
+usemtl blue
+f 44 80 81 45
+usemtl blue
+f 80 86 87 81
+usemtl blue
+f 86 50 51 87
+usemtl blue
+f 50 44 45 51
+usemtl default
+f 45 81 87 51
+usemtl default
+f 46 82 88 52
+usemtl default
+f 45 81 82 46
+usemtl default
+f 81 87 88 82
+usemtl default
+f 87 51 52 88
+usemtl default
+f 51 45 46 52
+usemtl default
+f 46 82 88 52
+usemtl default
+f 47 83 89 53
+usemtl default
+f 46 82 83 47
+usemtl default
+f 82 88 89 83
+usemtl default
+f 88 52 53 89
+usemtl default
+f 52 46 47 53
+usemtl default
+f 47 83 89 53
+usemtl default
+f 48 84 90 54
+usemtl default
+f 47 83 84 48
+usemtl default
+f 83 89 90 84
+usemtl default
+f 89 53 54 90
+usemtl default
+f 53 47 48 54
+usemtl default
+f 49 85 91 55
+usemtl default
+f 50 86 92 56
+usemtl default
+f 49 85 86 50
+usemtl default
+f 85 91 92 86
+usemtl default
+f 91 55 56 92
+usemtl default
+f 55 49 50 56
+usemtl default
+f 50 86 92 56
+usemtl default
+f 51 87 93 57
+usemtl default
+f 50 86 87 51
+usemtl default
+f 86 92 93 87
+usemtl default
+f 92 56 57 93
+usemtl default
+f 56 50 51 57
+usemtl default
+f 51 87 93 57
+usemtl default
+f 52 88 94 58
+usemtl default
+f 51 87 88 52
+usemtl default
+f 87 93 94 88
+usemtl default
+f 93 57 58 94
+usemtl default
+f 57 51 52 58
+usemtl default
+f 52 88 94 58
+usemtl default
+f 53 89 95 59
+usemtl default
+f 52 88 89 53
+usemtl default
+f 88 94 95 89
+usemtl default
+f 94 58 59 95
+usemtl default
+f 58 52 53 59
+usemtl default
+f 53 89 95 59
+usemtl default
+f 54 90 96 60
+usemtl default
+f 53 89 90 54
+usemtl default
+f 89 95 96 90
+usemtl default
+f 95 59 60 96
+usemtl default
+f 59 53 54 60
+usemtl default
+f 55 91 97 61
+usemtl default
+f 56 92 98 62
+usemtl default
+f 55 91 92 56
+usemtl default
+f 91 97 98 92
+usemtl default
+f 97 61 62 98
+usemtl default
+f 61 55 56 62
+usemtl default
+f 56 92 98 62
+usemtl default
+f 57 93 99 63
+usemtl default
+f 56 92 93 57
+usemtl default
+f 92 98 99 93
+usemtl default
+f 98 62 63 99
+usemtl default
+f 62 56 57 63
+usemtl default
+f 57 93 99 63
+usemtl default
+f 58 94 100 64
+usemtl default
+f 57 93 94 58
+usemtl default
+f 93 99 100 94
+usemtl default
+f 99 63 64 100
+usemtl default
+f 63 57 58 64
+usemtl default
+f 58 94 100 64
+usemtl default
+f 59 95 101 65
+usemtl default
+f 58 94 95 59
+usemtl default
+f 94 100 101 95
+usemtl default
+f 100 64 65 101
+usemtl default
+f 64 58 59 65
+usemtl default
+f 59 95 101 65
+usemtl default
+f 60 96 102 66
+usemtl default
+f 59 95 96 60
+usemtl default
+f 95 101 102 96
+usemtl default
+f 101 65 66 102
+usemtl default
+f 65 59 60 66
+usemtl default
+f 61 97 103 67
+usemtl default
+f 62 98 104 68
+usemtl default
+f 61 97 98 62
+usemtl default
+f 97 103 104 98
+usemtl default
+f 103 67 68 104
+usemtl default
+f 67 61 62 68
+usemtl default
+f 62 98 104 68
+usemtl default
+f 63 99 105 69
+usemtl default
+f 62 98 99 63
+usemtl default
+f 98 104 105 99
+usemtl default
+f 104 68 69 105
+usemtl default
+f 68 62 63 69
+usemtl default
+f 63 99 105 69
+usemtl default
+f 64 100 106 70
+usemtl default
+f 63 99 100 64
+usemtl default
+f 99 105 106 100
+usemtl default
+f 105 69 70 106
+usemtl default
+f 69 63 64 70
+usemtl default
+f 64 100 106 70
+usemtl default
+f 65 101 107 71
+usemtl default
+f 64 100 101 65
+usemtl default
+f 100 106 107 101
+usemtl default
+f 106 70 71 107
+usemtl default
+f 70 64 65 71
+usemtl default
+f 65 101 107 71
+usemtl default
+f 66 102 108 72
+usemtl default
+f 65 101 102 66
+usemtl default
+f 101 107 108 102
+usemtl default
+f 107 71 72 108
+usemtl default
+f 71 65 66 72
+usemtl default
+f 73 109 115 79
+usemtl default
+f 74 110 116 80
+usemtl default
+f 73 109 110 74
+usemtl default
+f 109 115 116 110
+usemtl default
+f 115 79 80 116
+usemtl default
+f 79 73 74 80
+usemtl default
+f 74 110 116 80
+usemtl default
+f 75 111 117 81
+usemtl default
+f 74 110 111 75
+usemtl default
+f 110 116 117 111
+usemtl default
+f 116 80 81 117
+usemtl default
+f 80 74 75 81
+usemtl default
+f 75 111 117 81
+usemtl default
+f 76 112 118 82
+usemtl default
+f 75 111 112 76
+usemtl default
+f 111 117 118 112
+usemtl default
+f 117 81 82 118
+usemtl default
+f 81 75 76 82
+usemtl default
+f 76 112 118 82
+usemtl default
+f 77 113 119 83
+usemtl default
+f 76 112 113 77
+usemtl default
+f 112 118 119 113
+usemtl default
+f 118 82 83 119
+usemtl default
+f 82 76 77 83
+usemtl default
+f 77 113 119 83
+usemtl default
+f 78 114 120 84
+usemtl default
+f 77 113 114 78
+usemtl default
+f 113 119 120 114
+usemtl default
+f 119 83 84 120
+usemtl default
+f 83 77 78 84
+usemtl default
+f 79 115 121 85
+usemtl default
+f 80 116 122 86
+usemtl default
+f 79 115 116 80
+usemtl default
+f 115 121 122 116
+usemtl default
+f 121 85 86 122
+usemtl default
+f 85 79 80 86
+usemtl default
+f 80 116 122 86
+usemtl default
+f 81 117 123 87
+usemtl default
+f 80 116 117 81
+usemtl default
+f 116 122 123 117
+usemtl default
+f 122 86 87 123
+usemtl default
+f 86 80 81 87
+usemtl default
+f 81 117 123 87
+usemtl default
+f 82 118 124 88
+usemtl default
+f 81 117 118 82
+usemtl default
+f 117 123 124 118
+usemtl default
+f 123 87 88 124
+usemtl default
+f 87 81 82 88
+usemtl default
+f 82 118 124 88
+usemtl default
+f 83 119 125 89
+usemtl default
+f 82 118 119 83
+usemtl default
+f 118 124 125 119
+usemtl default
+f 124 88 89 125
+usemtl default
+f 88 82 83 89
+usemtl default
+f 83 119 125 89
+usemtl default
+f 84 120 126 90
+usemtl default
+f 83 119 120 84
+usemtl default
+f 119 125 126 120
+usemtl default
+f 125 89 90 126
+usemtl default
+f 89 83 84 90
+usemtl default
+f 85 121 127 91
+usemtl default
+f 86 122 128 92
+usemtl default
+f 85 121 122 86
+usemtl default
+f 121 127 128 122
+usemtl default
+f 127 91 92 128
+usemtl default
+f 91 85 86 92
+usemtl default
+f 86 122 128 92
+usemtl default
+f 87 123 129 93
+usemtl default
+f 86 122 123 87
+usemtl default
+f 122 128 129 123
+usemtl default
+f 128 92 93 129
+usemtl default
+f 92 86 87 93
+usemtl default
+f 87 123 129 93
+usemtl default
+f 88 124 130 94
+usemtl default
+f 87 123 124 88
+usemtl default
+f 123 129 130 124
+usemtl default
+f 129 93 94 130
+usemtl default
+f 93 87 88 94
+usemtl default
+f 88 124 130 94
+usemtl default
+f 89 125 131 95
+usemtl default
+f 88 124 125 89
+usemtl default
+f 124 130 131 125
+usemtl default
+f 130 94 95 131
+usemtl default
+f 94 88 89 95
+usemtl default
+f 89 125 131 95
+usemtl default
+f 90 126 132 96
+usemtl default
+f 89 125 126 90
+usemtl default
+f 125 131 132 126
+usemtl default
+f 131 95 96 132
+usemtl default
+f 95 89 90 96
+usemtl default
+f 91 127 133 97
+usemtl default
+f 92 128 134 98
+usemtl default
+f 91 127 128 92
+usemtl default
+f 127 133 134 128
+usemtl default
+f 133 97 98 134
+usemtl default
+f 97 91 92 98
+usemtl default
+f 92 128 134 98
+usemtl default
+f 93 129 135 99
+usemtl default
+f 92 128 129 93
+usemtl default
+f 128 134 135 129
+usemtl default
+f 134 98 99 135
+usemtl default
+f 98 92 93 99
+usemtl default
+f 93 129 135 99
+usemtl default
+f 94 130 136 100
+usemtl default
+f 93 129 130 94
+usemtl default
+f 129 135 136 130
+usemtl default
+f 135 99 100 136
+usemtl default
+f 99 93 94 100
+usemtl default
+f 94 130 136 100
+usemtl default
+f 95 131 137 101
+usemtl default
+f 94 130 131 95
+usemtl default
+f 130 136 137 131
+usemtl default
+f 136 100 101 137
+usemtl default
+f 100 94 95 101
+usemtl default
+f 95 131 137 101
+usemtl default
+f 96 132 138 102
+usemtl default
+f 95 131 132 96
+usemtl default
+f 131 137 138 132
+usemtl default
+f 137 101 102 138
+usemtl default
+f 101 95 96 102
+usemtl default
+f 97 133 139 103
+usemtl default
+f 98 134 140 104
+usemtl default
+f 97 133 134 98
+usemtl default
+f 133 139 140 134
+usemtl default
+f 139 103 104 140
+usemtl default
+f 103 97 98 104
+usemtl default
+f 98 134 140 104
+usemtl default
+f 99 135 141 105
+usemtl default
+f 98 134 135 99
+usemtl default
+f 134 140 141 135
+usemtl default
+f 140 104 105 141
+usemtl default
+f 104 98 99 105
+usemtl default
+f 99 135 141 105
+usemtl default
+f 100 136 142 106
+usemtl default
+f 99 135 136 100
+usemtl default
+f 135 141 142 136
+usemtl default
+f 141 105 106 142
+usemtl default
+f 105 99 100 106
+usemtl default
+f 100 136 142 106
+usemtl default
+f 101 137 143 107
+usemtl default
+f 100 136 137 101
+usemtl default
+f 136 142 143 137
+usemtl default
+f 142 106 107 143
+usemtl default
+f 106 100 101 107
+usemtl default
+f 101 137 143 107
+usemtl default
+f 102 138 144 108
+usemtl default
+f 101 137 138 102
+usemtl default
+f 137 143 144 138
+usemtl default
+f 143 107 108 144
+usemtl default
+f 107 101 102 108
+usemtl default
+f 109 145 151 115
+usemtl default
+f 110 146 152 116
+usemtl default
+f 109 145 146 110
+usemtl default
+f 145 151 152 146
+usemtl default
+f 151 115 116 152
+usemtl default
+f 115 109 110 116
+usemtl default
+f 110 146 152 116
+usemtl default
+f 111 147 153 117
+usemtl default
+f 110 146 147 111
+usemtl default
+f 146 152 153 147
+usemtl default
+f 152 116 117 153
+usemtl default
+f 116 110 111 117
+usemtl default
+f 111 147 153 117
+usemtl default
+f 112 148 154 118
+usemtl default
+f 111 147 148 112
+usemtl default
+f 147 153 154 148
+usemtl default
+f 153 117 118 154
+usemtl default
+f 117 111 112 118
+usemtl default
+f 112 148 154 118
+usemtl default
+f 113 149 155 119
+usemtl default
+f 112 148 149 113
+usemtl default
+f 148 154 155 149
+usemtl default
+f 154 118 119 155
+usemtl default
+f 118 112 113 119
+usemtl default
+f 113 149 155 119
+usemtl default
+f 114 150 156 120
+usemtl default
+f 113 149 150 114
+usemtl default
+f 149 155 156 150
+usemtl default
+f 155 119 120 156
+usemtl default
+f 119 113 114 120
+usemtl default
+f 115 151 157 121
+usemtl default
+f 116 152 158 122
+usemtl default
+f 115 151 152 116
+usemtl default
+f 151 157 158 152
+usemtl default
+f 157 121 122 158
+usemtl default
+f 121 115 116 122
+usemtl default
+f 116 152 158 122
+usemtl default
+f 117 153 159 123
+usemtl default
+f 116 152 153 117
+usemtl default
+f 152 158 159 153
+usemtl default
+f 158 122 123 159
+usemtl default
+f 122 116 117 123
+usemtl default
+f 117 153 159 123
+usemtl default
+f 118 154 160 124
+usemtl default
+f 117 153 154 118
+usemtl default
+f 153 159 160 154
+usemtl default
+f 159 123 124 160
+usemtl default
+f 123 117 118 124
+usemtl default
+f 118 154 160 124
+usemtl default
+f 119 155 161 125
+usemtl default
+f 118 154 155 119
+usemtl default
+f 154 160 161 155
+usemtl default
+f 160 124 125 161
+usemtl default
+f 124 118 119 125
+usemtl default
+f 119 155 161 125
+usemtl default
+f 120 156 162 126
+usemtl default
+f 119 155 156 120
+usemtl default
+f 155 161 162 156
+usemtl default
+f 161 125 126 162
+usemtl default
+f 125 119 120 126
+usemtl default
+f 121 157 163 127
+usemtl default
+f 122 158 164 128
+usemtl default
+f 121 157 158 122
+usemtl default
+f 157 163 164 158
+usemtl default
+f 163 127 128 164
+usemtl default
+f 127 121 122 128
+usemtl default
+f 122 158 164 128
+usemtl default
+f 123 159 165 129
+usemtl default
+f 122 158 159 123
+usemtl default
+f 158 164 165 159
+usemtl default
+f 164 128 129 165
+usemtl default
+f 128 122 123 129
+usemtl default
+f 123 159 165 129
+usemtl default
+f 124 160 166 130
+usemtl default
+f 123 159 160 124
+usemtl default
+f 159 165 166 160
+usemtl default
+f 165 129 130 166
+usemtl default
+f 129 123 124 130
+usemtl default
+f 124 160 166 130
+usemtl default
+f 125 161 167 131
+usemtl default
+f 124 160 161 125
+usemtl default
+f 160 166 167 161
+usemtl default
+f 166 130 131 167
+usemtl default
+f 130 124 125 131
+usemtl default
+f 125 161 167 131
+usemtl default
+f 126 162 168 132
+usemtl default
+f 125 161 162 126
+usemtl default
+f 161 167 168 162
+usemtl default
+f 167 131 132 168
+usemtl default
+f 131 125 126 132
+usemtl default
+f 127 163 169 133
+usemtl default
+f 128 164 170 134
+usemtl default
+f 127 163 164 128
+usemtl default
+f 163 169 170 164
+usemtl default
+f 169 133 134 170
+usemtl default
+f 133 127 128 134
+usemtl default
+f 128 164 170 134
+usemtl default
+f 129 165 171 135
+usemtl default
+f 128 164 165 129
+usemtl default
+f 164 170 171 165
+usemtl default
+f 170 134 135 171
+usemtl default
+f 134 128 129 135
+usemtl default
+f 129 165 171 135
+usemtl default
+f 130 166 172 136
+usemtl default
+f 129 165 166 130
+usemtl default
+f 165 171 172 166
+usemtl default
+f 171 135 136 172
+usemtl default
+f 135 129 130 136
+usemtl default
+f 130 166 172 136
+usemtl default
+f 131 167 173 137
+usemtl default
+f 130 166 167 131
+usemtl default
+f 166 172 173 167
+usemtl default
+f 172 136 137 173
+usemtl default
+f 136 130 131 137
+usemtl default
+f 131 167 173 137
+usemtl default
+f 132 168 174 138
+usemtl default
+f 131 167 168 132
+usemtl default
+f 167 173 174 168
+usemtl default
+f 173 137 138 174
+usemtl default
+f 137 131 132 138
+usemtl default
+f 133 169 175 139
+usemtl default
+f 134 170 176 140
+usemtl default
+f 133 169 170 134
+usemtl default
+f 169 175 176 170
+usemtl default
+f 175 139 140 176
+usemtl default
+f 139 133 134 140
+usemtl default
+f 134 170 176 140
+usemtl default
+f 135 171 177 141
+usemtl default
+f 134 170 171 135
+usemtl default
+f 170 176 177 171
+usemtl default
+f 176 140 141 177
+usemtl default
+f 140 134 135 141
+usemtl default
+f 135 171 177 141
+usemtl default
+f 136 172 178 142
+usemtl default
+f 135 171 172 136
+usemtl default
+f 171 177 178 172
+usemtl default
+f 177 141 142 178
+usemtl default
+f 141 135 136 142
+usemtl default
+f 136 172 178 142
+usemtl default
+f 137 173 179 143
+usemtl default
+f 136 172 173 137
+usemtl default
+f 172 178 179 173
+usemtl default
+f 178 142 143 179
+usemtl default
+f 142 136 137 143
+usemtl default
+f 137 173 179 143
+usemtl default
+f 138 174 180 144
+usemtl default
+f 137 173 174 138
+usemtl default
+f 173 179 180 174
+usemtl default
+f 179 143 144 180
+usemtl default
+f 143 137 138 144
+usemtl default
+f 145 181 187 151
+usemtl default
+f 146 182 188 152
+usemtl default
+f 145 181 182 146
+usemtl default
+f 181 187 188 182
+usemtl default
+f 187 151 152 188
+usemtl default
+f 151 145 146 152
+usemtl default
+f 146 182 188 152
+usemtl default
+f 147 183 189 153
+usemtl default
+f 146 182 183 147
+usemtl default
+f 182 188 189 183
+usemtl default
+f 188 152 153 189
+usemtl default
+f 152 146 147 153
+usemtl default
+f 147 183 189 153
+usemtl default
+f 148 184 190 154
+usemtl default
+f 147 183 184 148
+usemtl default
+f 183 189 190 184
+usemtl default
+f 189 153 154 190
+usemtl default
+f 153 147 148 154
+usemtl default
+f 148 184 190 154
+usemtl default
+f 149 185 191 155
+usemtl default
+f 148 184 185 149
+usemtl default
+f 184 190 191 185
+usemtl default
+f 190 154 155 191
+usemtl default
+f 154 148 149 155
+usemtl default
+f 149 185 191 155
+usemtl default
+f 150 186 192 156
+usemtl default
+f 149 185 186 150
+usemtl default
+f 185 191 192 186
+usemtl default
+f 191 155 156 192
+usemtl default
+f 155 149 150 156
+usemtl default
+f 151 187 193 157
+usemtl default
+f 152 188 194 158
+usemtl default
+f 151 187 188 152
+usemtl default
+f 187 193 194 188
+usemtl default
+f 193 157 158 194
+usemtl default
+f 157 151 152 158
+usemtl default
+f 152 188 194 158
+usemtl default
+f 153 189 195 159
+usemtl default
+f 152 188 189 153
+usemtl default
+f 188 194 195 189
+usemtl default
+f 194 158 159 195
+usemtl default
+f 158 152 153 159
+usemtl default
+f 153 189 195 159
+usemtl default
+f 154 190 196 160
+usemtl default
+f 153 189 190 154
+usemtl default
+f 189 195 196 190
+usemtl default
+f 195 159 160 196
+usemtl default
+f 159 153 154 160
+usemtl default
+f 154 190 196 160
+usemtl default
+f 155 191 197 161
+usemtl default
+f 154 190 191 155
+usemtl default
+f 190 196 197 191
+usemtl default
+f 196 160 161 197
+usemtl default
+f 160 154 155 161
+usemtl default
+f 155 191 197 161
+usemtl default
+f 156 192 198 162
+usemtl default
+f 155 191 192 156
+usemtl default
+f 191 197 198 192
+usemtl default
+f 197 161 162 198
+usemtl default
+f 161 155 156 162
+usemtl default
+f 157 193 199 163
+usemtl default
+f 158 194 200 164
+usemtl default
+f 157 193 194 158
+usemtl default
+f 193 199 200 194
+usemtl default
+f 199 163 164 200
+usemtl default
+f 163 157 158 164
+usemtl default
+f 158 194 200 164
+usemtl default
+f 159 195 201 165
+usemtl default
+f 158 194 195 159
+usemtl default
+f 194 200 201 195
+usemtl default
+f 200 164 165 201
+usemtl default
+f 164 158 159 165
+usemtl default
+f 159 195 201 165
+usemtl default
+f 160 196 202 166
+usemtl default
+f 159 195 196 160
+usemtl default
+f 195 201 202 196
+usemtl default
+f 201 165 166 202
+usemtl default
+f 165 159 160 166
+usemtl default
+f 160 196 202 166
+usemtl default
+f 161 197 203 167
+usemtl default
+f 160 196 197 161
+usemtl default
+f 196 202 203 197
+usemtl default
+f 202 166 167 203
+usemtl default
+f 166 160 161 167
+usemtl default
+f 161 197 203 167
+usemtl default
+f 162 198 204 168
+usemtl default
+f 161 197 198 162
+usemtl default
+f 197 203 204 198
+usemtl default
+f 203 167 168 204
+usemtl default
+f 167 161 162 168
+usemtl default
+f 163 199 205 169
+usemtl default
+f 164 200 206 170
+usemtl default
+f 163 199 200 164
+usemtl default
+f 199 205 206 200
+usemtl default
+f 205 169 170 206
+usemtl default
+f 169 163 164 170
+usemtl default
+f 164 200 206 170
+usemtl default
+f 165 201 207 171
+usemtl default
+f 164 200 201 165
+usemtl default
+f 200 206 207 201
+usemtl default
+f 206 170 171 207
+usemtl default
+f 170 164 165 171
+usemtl default
+f 165 201 207 171
+usemtl default
+f 166 202 208 172
+usemtl default
+f 165 201 202 166
+usemtl default
+f 201 207 208 202
+usemtl default
+f 207 171 172 208
+usemtl default
+f 171 165 166 172
+usemtl default
+f 166 202 208 172
+usemtl default
+f 167 203 209 173
+usemtl default
+f 166 202 203 167
+usemtl default
+f 202 208 209 203
+usemtl default
+f 208 172 173 209
+usemtl default
+f 172 166 167 173
+usemtl default
+f 167 203 209 173
+usemtl default
+f 168 204 210 174
+usemtl default
+f 167 203 204 168
+usemtl default
+f 203 209 210 204
+usemtl default
+f 209 173 174 210
+usemtl default
+f 173 167 168 174
+usemtl default
+f 169 205 211 175
+usemtl default
+f 170 206 212 176
+usemtl default
+f 169 205 206 170
+usemtl default
+f 205 211 212 206
+usemtl default
+f 211 175 176 212
+usemtl default
+f 175 169 170 176
+usemtl default
+f 170 206 212 176
+usemtl default
+f 171 207 213 177
+usemtl default
+f 170 206 207 171
+usemtl default
+f 206 212 213 207
+usemtl default
+f 212 176 177 213
+usemtl default
+f 176 170 171 177
+usemtl default
+f 171 207 213 177
+usemtl default
+f 172 208 214 178
+usemtl default
+f 171 207 208 172
+usemtl default
+f 207 213 214 208
+usemtl default
+f 213 177 178 214
+usemtl default
+f 177 171 172 178
+usemtl default
+f 172 208 214 178
+usemtl default
+f 173 209 215 179
+usemtl default
+f 172 208 209 173
+usemtl default
+f 208 214 215 209
+usemtl default
+f 214 178 179 215
+usemtl default
+f 178 172 173 179
+usemtl default
+f 173 209 215 179
+usemtl default
+f 174 210 216 180
+usemtl default
+f 173 209 210 174
+usemtl default
+f 209 215 216 210
+usemtl default
+f 215 179 180 216
+usemtl default
+f 179 173 174 180
