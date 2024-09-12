@@ -22,7 +22,7 @@ class Object3D:
 
     def draw(self):
         self.screen_projection()
-        ## self.movement()s
+        self.movement()
 
     def movement(self):
         if self.movement_flag:

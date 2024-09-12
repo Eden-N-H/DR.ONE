@@ -32,6 +32,7 @@ SELECT_WAYPOINT = 4
 
 selected_type = SELECT_NONE
 
+
 SIZE_INPUT = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect((800, 100), (400, 50)), manager=MANAGER, object_id="#main_text_entry")
 START_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((800, 200), (100, 50)), text="Start", manager=MANAGER)
 END_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((800, 300), (100, 50)), text="End", manager=MANAGER)
@@ -64,6 +65,9 @@ def draw(win, grid, rows, width):
         for spot in row:
             spot.draw(win)
     draw_grid(win, rows, width)  # Draw grid lines
+
+    grid_text = font.render(f"Grid size: " +  str(GRID_SIZE), True, BLACK)
+    SCREEN.blit(grid_text, (800, 50))
 
 def get_clicked_pos(pos, rows, width):
     gap = width // rows
