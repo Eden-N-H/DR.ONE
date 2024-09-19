@@ -4,6 +4,7 @@ import pygame_gui
 from spot import *
 from algorithm import *
 import time
+from middleware import *
 
 pygame.init()
 pygame.font.init()
@@ -136,13 +137,10 @@ def main():
                     selected_type = SELECT_BARRIER
                     adjustSelect(BARRIER_BUTTON)
                 elif event.ui_element == CLEAR_BUTTON:
-
-
                     start = None
                     end = None
                     grid = make_grid(GRID_SIZE, GRID_WIDTH)
                 elif event.ui_element == CALCULATE_BUTTON and start and end:
-
 
                     startTime = time.time()
                     for row in grid:
@@ -152,6 +150,8 @@ def main():
                     endTime = time.time()
                     processing_time = endTime - startTime
                     # print("Processing time: " + str(processing_time) + "s")
+                    pathToText()
+
 
 
             # Mouse click events for selecting grid cells
