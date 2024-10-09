@@ -102,7 +102,7 @@ def thetaStarAlgorithm(draw, grid, start, end, waypoints):
                     count += 1
                     open_set.put((f_score[neighbor], count, neighbor))
                     open_set_hash.add(neighbor)
-                    neighbor.make_open()
+                    #neighbor.make_open()
         draw()
 
         if current != start:
