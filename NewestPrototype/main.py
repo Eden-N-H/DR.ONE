@@ -33,6 +33,8 @@ SELECT_WAYPOINT = 4
 
 selected_type = SELECT_NONE
 
+optionsList = ["A*", "Theta*", "Dijkstra"]
+
 
 SIZE_INPUT = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect((800, 100), (400, 50)), manager=MANAGER, object_id="#main_text_entry")
 START_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((800, 200), (100, 50)), text="Start", manager=MANAGER)
@@ -40,6 +42,8 @@ END_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((800, 300), 
 BARRIER_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((800, 400), (100, 50)), text="Barrier", manager=MANAGER)
 CALCULATE_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((800, 500), (100, 50)), text="Calculate", manager=MANAGER)
 CLEAR_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((1000, 500), (100, 50)), text="Clear", manager=MANAGER)
+WAYPOINT_BUTTON = pygame_gui.elements.UIButton(relative_rect=pygame.Rect((1000, 200), (100, 50)), text="Waypoint", manager=MANAGER)
+MODEL_DROPDOWN = pygame_gui.elements.UIDropDownMenu(relative_rect=pygame.Rect((1000, 300), (100, 50)), options_list=optionsList, starting_option="A*")
 
 def make_grid(rows, width):
     grid = []
@@ -80,7 +84,7 @@ def get_clicked_pos(pos, rows, width):
     return row, col
 
 def adjustSelect(button):
-    buttons = [START_BUTTON, END_BUTTON, BARRIER_BUTTON, CALCULATE_BUTTON]
+    buttons = [START_BUTTON, END_BUTTON, BARRIER_BUTTON, WAYPOINT_BUTTON, CALCULATE_BUTTON]
     button.select()
     for b in buttons:
         if b != button:
@@ -93,9 +97,12 @@ def main():
     global GRID_SIZE
     grid = make_grid(GRID_SIZE, GRID_WIDTH)
     start = None
+    waypoints = []
     end = None
     mouse_pressed = False
     processing_time = None
+
+    selectedModel = "A*"
 
     global selected_type
 
@@ -125,6 +132,10 @@ def main():
                 GRID_SIZE = int(event.text)
                 grid = make_grid(GRID_SIZE, GRID_WIDTH)
 
+            if event.type == pygame_gui.UI_DROP_DOWN_MENU_CHANGED:
+                if event.ui_element == MODEL_DROPDOWN:
+                    selectedModel = event.text
+
             # Handle button input
             if event.type == pygame_gui.UI_BUTTON_PRESSED:
                 if event.ui_element == START_BUTTON:
@@ -136,17 +147,29 @@ def main():
                 elif event.ui_element == BARRIER_BUTTON:
                     selected_type = SELECT_BARRIER
                     adjustSelect(BARRIER_BUTTON)
+                elif event.ui_element == WAYPOINT_BUTTON:
+                    selected_type = SELECT_WAYPOINT
+                    adjustSelect(WAYPOINT_BUTTON)
                 elif event.ui_element == CLEAR_BUTTON:
                     start = None
                     end = None
+                    processing_time = None
                     grid = make_grid(GRID_SIZE, GRID_WIDTH)
                 elif event.ui_element == CALCULATE_BUTTON and start and end:
-
+                    for row in grid:
+                        for spot in row:
+                            if spot.color == PURPLE:
+                                spot.reset()
                     startTime = time.time()
                     for row in grid:
                         for spot in row:
                             spot.update_neighbors(grid)
-                    algorithm(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end)
+                    if (selectedModel == "A*"):
+                        aStarAlgorithm(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end, waypoints)
+                    elif (selectedModel == "Theta*"):
+                        thetaStarAlgorithm(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end, waypoints)
+                    elif (selectedModel == "Dijkstra"):
+                        dijkstraAlgorithm(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end, waypoints)
                     endTime = time.time()
                     processing_time = endTime - startTime
                     # print("Processing time: " + str(processing_time) + "s")
@@ -175,6 +198,10 @@ def main():
                         elif selected_type == SELECT_BARRIER:
                             if spot != start and spot != end:
                                 spot.make_barrier()
+                        elif selected_type == SELECT_WAYPOINT:
+                            if spot != start and spot != end:
+                                spot.make_waypoint()
+                                waypoints.append(spot)
 
                 elif event.button == 3:
                     mouse_pressed = True
