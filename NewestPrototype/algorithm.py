@@ -111,7 +111,7 @@ def thetaStarAlgorithm(draw, grid, start, end, waypoints):
 
     return False
 
-def get_neighbors(current, grid):  # Theta* alg.
+def get_neighbors(current, grid):  # For theta* alg.
     neighbors = []
     row, col = current.get_pos()
     rows, cols = len(grid), len(grid[0])
