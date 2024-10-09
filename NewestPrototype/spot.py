@@ -44,6 +44,9 @@ class Spot:
     def is_waypoint(self):
         return self.color == BLUE
 
+    def is_path(self):
+        return self.color == PURPLE
+
     def reset(self):
         self.color = WHITE
 
