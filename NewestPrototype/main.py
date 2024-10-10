@@ -1,6 +1,7 @@
 import pygame
 import sys
 import pygame_gui
+import os
 from spot import *
 from algorithm import *
 import time
@@ -94,6 +95,9 @@ def adjustSelect(button):
 
 
 def main():
+    if os.path.exists("NewestPrototype/path_text_files/path.txt"):
+        os.remove("NewestPrototype/path_text_files/path.txt")
+    
     global GRID_SIZE
     grid = make_grid(GRID_SIZE, GRID_WIDTH)
     start = None
