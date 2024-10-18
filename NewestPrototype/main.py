@@ -34,7 +34,7 @@ SELECT_WAYPOINT = 4
 
 selected_type = SELECT_NONE
 
-optionsList = ["A*", "Theta*", "Dijkstra"]
+optionsList = ["A*", "Theta*", "Dijkstra", "Theta* (NoDiagonals)", "A*+JPS"]
 
 
 SIZE_INPUT = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect((800, 100), (400, 50)), manager=MANAGER, object_id="#main_text_entry")
@@ -164,6 +164,8 @@ def main():
                         for spot in row:
                             if spot.color == PURPLE:
                                 spot.reset()
+                            elif spot.color == GREEN:
+                                spot.reset()
                     startTime = time.time()
                     for row in grid:
                         for spot in row:
@@ -174,6 +176,12 @@ def main():
                         thetaStarAlgorithm(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end, waypoints)
                     elif (selectedModel == "Dijkstra"):
                         dijkstraAlgorithm(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end, waypoints)
+                    elif (selectedModel == "Theta* (NoDiagonals)"):
+                        thetaStarAlgorithmNoDiagonals(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end,
+                                          waypoints)
+                    elif (selectedModel == "A*+JPS"):
+                        aStarJPS(lambda: draw(SCREEN, grid, GRID_SIZE, GRID_WIDTH), grid, start, end,
+                                          waypoints)
                     endTime = time.time()
                     processing_time = endTime - startTime
                     # print("Processing time: " + str(processing_time) + "s")
