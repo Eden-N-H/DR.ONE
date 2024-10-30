@@ -57,7 +57,7 @@ def get_neighbors_3d(node, grid, step):
     neighbors = []
     for dx, dy, dz in [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]:
         neighbor = (x + dx, y + dy, z + dz)
-        if all(0 <= n < 5 for n in neighbor):  # Ensure neighbor is within grid bounds
+        if all(0 <= n < grid.size for n in neighbor):  # Ensure neighbor is within grid bounds
             neighbors.append(neighbor)
     return neighbors
 

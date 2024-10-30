@@ -7,7 +7,6 @@ import time  # Import the time module for measuring processing time
 
 class Main():
     def __init__(self, grid_size):
-        self.grid_size = grid_size
         self.grid = Grid(grid_size, step=1)
         self.processing_time_label = None  # Placeholder for the processing time label
 
@@ -18,7 +17,7 @@ class Main():
         ax = fig.add_subplot(111, projection='3d')
 
         # Plot all valid grid points as light grey dots for visualization
-        x_vals, y_vals, z_vals = zip(*[(x, y, z) for x in range(5) for y in range(5) for z in range(5)])
+        x_vals, y_vals, z_vals = zip(*[(x, y, z) for x in range(grid.size) for y in range(grid.size) for z in range(grid.size)])
         ax.scatter(x_vals, y_vals, z_vals, c='lightgrey', marker='o', s=10, label="Grid Points")
 
         # Plot barriers as red points
@@ -42,9 +41,9 @@ class Main():
         ax.legend()
 
         # Set ticks to show only whole numbers (0, 1, 2, 3, 4)
-        ax.set_xticks(range(5))
-        ax.set_yticks(range(5))
-        ax.set_zticks(range(5))
+        ax.set_xticks(range(grid.size))
+        ax.set_yticks(range(grid.size))
+        ax.set_zticks(range(grid.size))
 
         canvas.draw_idle()
 
@@ -96,7 +95,7 @@ class Main():
     def add_point(self, point_type, canvas):
         try:
             x, y, z = int(self.x_entry.get()), int(self.y_entry.get()), int(self.z_entry.get())
-            if 0 <= x < 5 and 0 <= y < 5 and 0 <= z < 5:
+            if 0 <= x < self.grid.size and 0 <= y < self.grid.size and 0 <= z < self.grid.size:
                 # Check for existing points
                 if (x, y, z) == self.grid.start:
                     print("A Start point already exists at this location.")
@@ -145,16 +144,22 @@ class Main():
         self.draw_initial_grid(canvas)
 
     def addExample(self, canvas):
-        # Using add_point method to add barriers, start, and end points
-        barriers = [(1, 1, 1), (0, 2, 1), (2, 0, 1), (3, 1, 0), (1, 3, 3), (4, 4, 0), (1, 0, 4), (3, 3, 1)]
+        # Clear any existing points
+        self.clear_grid(canvas)
+
+        # Add a larger set of barriers
+        barriers = [
+            (1, 1, 1), (1, 2, 3), (2, 3, 5), (3, 4, 6), (5, 5, 5), (6, 6, 1),
+            (2, 0, 6), (0, 5, 3), (7, 3, 4), (4, 4, 7), (3, 6, 2), (1, 5, 1),
+            (6, 3, 3), (5, 1, 4), (0, 4, 2), (7, 1, 6), (6, 7, 7), (2, 6, 0),
+            (3, 1, 1), (4, 6, 4), (5, 0, 3), (6, 5, 2), (3, 2, 6), (7, 4, 4)
+        ]
         for barrier in barriers:
             self.grid.add_barrier(*barrier)
 
-        self.grid.add_waypoint(4, 1, 4)
-
-        # Set the start and end points
-        self.grid.start = (3, 3, 3)
-        self.grid.end = (0, 0, 0)
+        # Set the start and end points on opposite sides of the grid
+        self.grid.start = (0, 0, 0)
+        self.grid.end = (7, 7, 7)
 
         # Draw the updated grid
         self.draw_initial_grid(canvas)
@@ -214,5 +219,5 @@ class Main():
         root.mainloop()
 
 if __name__ == "__main__":
-    m = Main((5, 5, 5))
+    m = Main(8)
     m.main()

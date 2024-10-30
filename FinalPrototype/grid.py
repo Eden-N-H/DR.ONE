@@ -1,10 +1,10 @@
 import numpy as np
 
 class Grid:
-    def __init__(self, size, step=1):
+    def __init__(self, size=5, step=1):
         self.size = size  # Store the size as a tuple (x_size, y_size, z_size)
         self.step = step
-        self.grid = np.zeros((size[0], size[1], size[2]))  # Initialize a 5x5x5 grid
+        self.grid = np.zeros((size, size, size))  # Initialize a grid
         self.barriers = []  # Store barriers as coordinate tuples
 
         # Initialize start, waypoints, and end as None
