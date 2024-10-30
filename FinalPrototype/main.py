@@ -57,6 +57,14 @@ class Main():
             ax.plot(path_coords[0], path_coords[1], path_coords[2], c='b', label="Path")
         canvas.draw_idle()
 
+    def write_path_to_file(self, path):
+        # Create or overwrite a file called 'path_vectors.txt'
+        with open("path_vectors.txt", "w") as f:
+            for i in range(len(path) - 1):
+                # Calculate the vector from current point to the next
+                vector = (path[i + 1][0] - path[i][0], path[i + 1][1] - path[i][1], path[i + 1][2] - path[i][2])
+                f.write(f"{vector}\n")  # Write the vector to the file
+
     def generate_path_and_display(self, canvas):
         if not self.grid.start or not self.grid.end:
             print("Please ensure start and end points are defined.")
@@ -72,6 +80,9 @@ class Main():
             self.update_path_on_grid(canvas, final_path)
             # Display processing time
             self.show_processing_time(processing_time)
+
+            # Write the path to file
+            self.write_path_to_file(final_path)
         else:
             print("No path found.")
 
