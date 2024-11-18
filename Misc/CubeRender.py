@@ -2,6 +2,11 @@ import pygame
 import numpy as np
 from math import *
 
+'''
+Use 'x', 'y', 'z' to rotate
+
+'''
+
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 BLACK = (0, 0, 0)

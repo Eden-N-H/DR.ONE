@@ -17,7 +17,7 @@ class SoftwareRender:
     def create_objects(self):
         self.camera = Camera(self, [-5, 6, -55]) # creates a camera at a specified point in 3d space
         self.projection = Projection(self) # create instance of projection class
-        self.object = self.get_object_from_file('3DRenderer/3DResources/t_34_obj.obj') # specifies obj file location
+        self.object = self.get_object_from_file('3DResources/t_34_obj.obj') # specifies obj file location
         self.object.rotate_y(-math.pi / 4) # applies a rotation to object to orient correctly in regard to screen
 
     def get_object_from_file(self, filename): # function reads data from obj file to render faces and vertexes.

@@ -95,8 +95,8 @@ def adjustSelect(button):
 
 
 def main():
-    if os.path.exists("NewestPrototype/path_text_files/path.txt"):
-        os.remove("NewestPrototype/path_text_files/path.txt")
+    if os.path.exists("Final2DPrototype/path_text_files/path.txt"):
+        os.remove("Final2DPrototype/path_text_files/path.txt")
     
     global GRID_SIZE
     grid = make_grid(GRID_SIZE, GRID_WIDTH)
